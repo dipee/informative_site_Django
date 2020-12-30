@@ -4,8 +4,7 @@ from django.db import models
 class HeaderImage(models.Model):
     title = models.CharField(max_length=200)
     is_active = models.BooleanField()
-    image = models.ImageField(upload_to='Mainslider', null=True, default=None)
-    header_url = models.URLField(max_length=200, null=True, default=None)
+    image = models.ImageField(upload_to='Mainslider',blank=True, null=True, default=None)
 
     def __str__(self):
         return self.title
@@ -15,7 +14,6 @@ class Services(models.Model):
     title = models.CharField(max_length=100)
     image = models.ImageField(upload_to='services', null=True, default = None)
     description = models.TextField()
-    services_url = models.URLField(max_length=200, null=True, default=None)
 
     def __str__(self):
         return self.title

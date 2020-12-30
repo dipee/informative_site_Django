@@ -1,6 +1,6 @@
 
 from .models import HeaderImage, Services, Testimonial, ContactUs, TestModel 
-from .serializers import HeaderImageSerializer, ServicesSerializer, TestimonailSerializer, UserSerializer, ContactSerializer
+from .serializers import HeaderImageSerializer, ServicesSerializer, TestimonailSerializer, ContactSerializer
 
 #from rest framework
 from rest_framework.response import Response
